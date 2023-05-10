@@ -1,0 +1,35 @@
+LIB_centralization_power_balance_decisions = {
+	
+	LIB_talk_with_local_leaders = {
+		icon = raj_marginalized_muslim_community_happy
+
+		allowed = { original_tag = LIB }
+
+		visible = {
+			always = yes
+		}
+
+		available = {
+			is_power_balance_in_range = {
+				id = LIB_centralization_bop
+				range = LIB_centralization_bop_balanced
+			}
+		}
+
+		days_remove = 30 	
+
+		complete_effect = {
+			add_power_balance_value = {
+				id = LIB_centralization_bop
+				value = 0.2
+			}		
+		}
+
+		remove_effect = {
+			add_political_power = 150
+		}
+
+		
+	}
+
+	}

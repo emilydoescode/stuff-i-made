@@ -1,0 +1,31 @@
+focus_tree = {
+	id = liberia_focus
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = LIB
+			has_dlc = "Battle for the Bosporus"
+		}
+	}
+	
+	default = no
+
+	focus = {
+		id = iniate_balance
+		icon = GFX_focus_ITA_comandante_diavolo_shine
+		cost = 1
+		x = 2
+		y = 2
+		completion_reward = { 
+
+			set_power_balance = {
+				id = LIB_centralization_bop
+				left_side = LIB_centralization_bop_sultan
+				right_side = LIB_centralization_bop_local_leaders
+			}
+		}
+	}
+}

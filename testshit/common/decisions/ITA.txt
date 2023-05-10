@@ -1,0 +1,35 @@
+political_actions = {
+
+	ITA_move_capital_to_naples = {
+
+		allowed = {
+			original_tag = ITA
+		}
+
+		icon = ger_mefo_bills
+		
+		available = {
+			owns_state = 2
+			has_full_control_of_state = 2
+		    2 = { is_core_of = ITA }
+		}
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		visible = {
+			has_full_control_of_state = 784
+		}
+		fire_only_once = yes
+		complete_effect = {
+			add_stability = 0.1
+			set_capital = { state = 784 }
+			set_province_name = { id = 3320 name = "Naples" }
+			hidden_effect = { 
+				784 = { set_state_name = "Naples" }
+			}
+		}
+	}	
+}
+
